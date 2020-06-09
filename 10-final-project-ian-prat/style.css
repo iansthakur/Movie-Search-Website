@@ -1,0 +1,85 @@
+#nav{
+  background-color: #557a95 !important;
+}
+#threelines{
+  background-color: #b1a296 !important;
+  color: black !important;
+}
+#search-bar{
+    /* none for now */
+    border-color: black !important;
+    color: black !important;
+}
+#search-hit{
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+}
+a{
+  color: white !important;
+  font-weight: 400;
+}
+.movie-img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 150px;
+  width: 20px;
+}
+#gallery-grid{
+  padding-top: 1%;
+  display: none;
+}
+p{
+  text-align: center;
+}
+#large-view{
+  padding-top: 1%;
+  /* have this switch to display block when title is clicked */
+  /* display: none; */
+}
+#movie-description{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.f-r{
+  float: right !important;
+}
+.trailer{
+  display: none;
+}
+.trailer.show{
+  display: block;
+}
+
+#welcome{
+  display: block;
+}
+
+/* MAP CSS PROVIDED BY GOOGLE */
+  #map {
+    height: 100%;
+    background-color: grey;
+    display: block;
+  }
+  /* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 65%;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+
+  #panel {
+    height: 100%;
+    width: null;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all .2s ease-out;
+  }
+  .open {
+    width: 250px;
+  }

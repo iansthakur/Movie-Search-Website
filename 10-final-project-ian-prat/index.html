@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Person CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>IMDb Movie App</title>
+  </head>
+  <body>
+    <!-- NAV Bar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" target="_blank" href="https://www.themoviedb.org/">Powered by IMDb</a>
+        <button id="threelines" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" id="home">Theater near me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a id="fav"class="nav-link" href="#">Favorites</a>
+            </li>
+            <li class="nav-item">
+              <a id="pop" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Popular</a>
+            </li>
+          </ul>
+          <form id="searchForm"class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-bar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-hit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+    <div class="container p-4" id="list-div">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+
+      <!-- <div class="card mb-3 mx-auto" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSSaNW_zqnHDhHUGWoq-zY6JhMhr1u8yuvjGVpt2HxINwrHq1K8wdfgjoXp95dBWUzqBorNdirgbbWzAYDAxbLlTw78cruJi7E3nyk3LUMGU4oI12_sgpXr-A&usqp=CAc" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Joker</h5>
+                <p class="card-text text-left">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary">Details</a>
+
+              </div>
+              <iframe class ="trailer show"
+                videoId="t433PEQGErc">
+              </iframe>
+            </div>
+          </div>
+        </div> -->
+    </div>
+
+    <!-- TODO: Step 4A2: Add a generic sidebar -->
+    <!-- The slide-out panel for showing place details -->
+    <div id="panel"></div>
+
+    <!-- Map appears here -->
+    <div id="map" class="show"></div>
+
+    <div id="welcome">
+      <h1>Welcome to our movie search app powered by IMDb and Google</h1>
+      <h2>To begin, press popular in the navigation bar to look at the trending movies right now</h2>
+      <h3>Or, type something into the search bar and hit enter</h3>
+      <h4>You can add items to your favorites by pressing the button</h4>
+      <h4>If you press 'theater near me', a map showing theaters near you</h4>
+      <h6>Please note that this will not work if you deny location services</h6>
+      <h1>Enjoy!</h1>
+    </div>
+
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChg3lB1s0Uw5ezAklusssZc2MdG1HoDtU&libraries=places&callback=initMap">
+    </script>
+
+    <!-- Personal JavaScript -->
+
+    <script src="server.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFjAM69wG80TuPjf2na5KvI_JJWPDiVxk&libraries=places"></script> -->
+  </body>
+</html>
+
+<!-- Google and IMDb were used to complete this app. This includes use of their apis
+and portions of code from their websites -->
